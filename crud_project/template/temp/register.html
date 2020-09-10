@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<form action="{% url 'crud_project:reg' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="firstname" placeholder="Firstname/username"><br>
+    <input type="text" name="lastname" placeholder="lastname"><br>
+    <input type="password" name="password" placeholder="password"><br>
+    <input type="email" name="email" placeholder="Email"><br>
+    <input type="submit" name="submit" value="submit">
+
+
+</form>
+<a href="{% url 'crud_project:login' %}">Login?</a>
+
+</body>
+</html>
