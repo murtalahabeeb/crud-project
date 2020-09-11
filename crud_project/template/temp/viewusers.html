@@ -10,15 +10,19 @@
         <th>FIRSTNAME</th>
         <th>LASTNAME</th>
         <th>EMAIL</th>
+        <th>Actions</th>
     </tr>
     {% for person in users %}
     <tr>
         <td>{{ person.firstname }}</td>
          <td>{{ person.lastname }}</td>
          <td>{{ person.email }}</td>
+        <td><a href="{% url 'crud_project:edit' person.id %}">Update</a><a href="{% url 'crud_project:del' person.id %}">delete</a></td>
     </tr>
     {% endfor %}
 </table>
+<br>
+<a href="{% url 'crud_project:dash' %}">Dashboard</a>
 
 </body>
 </html>

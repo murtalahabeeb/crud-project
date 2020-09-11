@@ -10,15 +10,15 @@ def index(request):
     if request.method == 'POST':
         name = request.POST["firstname"]
         password = request.POST["password"]
-        #in this case firstname acts like a username which is unique
-        #could also use email since email is unique
+        # in this case firstname acts like a username which is unique
+        # could also use email since email is unique
         user = User.objects.get(firstname=name)
 
         if user is not None:
             if password == user.password:
                 return HttpResponseRedirect(reverse("crud_project:dash"))
             else:
-                 message = "no user found"
+                message = "no user found"
 
     return render(request, "temp/index.html", {"message": message})
 
@@ -40,3 +40,22 @@ def register(request):
         user.save()
         return HttpResponseRedirect(reverse("crud_project:dash"))
     return render(request, "temp/register.html", )
+
+
+def update(request, user_id):
+    user = User.objects.get(id=user_id)
+
+    if request.method == 'POST':
+        user.firstname = request.POST["firstname"]
+        user.password = request.POST["password"]
+        user.email = request.POST["email"]
+        user.lastname = request.POST["lastname"]
+
+        user.save()
+        return HttpResponseRedirect(reverse("crud_project:view"))
+    return render(request, "temp/update.html", {"user": user})
+def delete(request, user_id):
+    user = User.objects.get(id=user_id)
+    user.delete()
+
+    return HttpResponseRedirect(reverse("crud_project:view"))
