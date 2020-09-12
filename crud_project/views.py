@@ -12,13 +12,18 @@ def index(request):
         password = request.POST["password"]
         # in this case firstname acts like a username which is unique
         # could also use email since email is unique
-        user = User.objects.get(firstname=name)
+        try:
+            user = User.objects.get(firstname=name)
+        except:
+            user = None
 
         if user is not None:
             if password == user.password:
                 return HttpResponseRedirect(reverse("crud_project:dash"))
             else:
-                message = "no user found"
+                message = "wrong credentials"
+        else:
+            message = "User not found"
 
     return render(request, "temp/index.html", {"message": message})
 
@@ -54,6 +59,8 @@ def update(request, user_id):
         user.save()
         return HttpResponseRedirect(reverse("crud_project:view"))
     return render(request, "temp/update.html", {"user": user})
+
+
 def delete(request, user_id):
     user = User.objects.get(id=user_id)
     user.delete()

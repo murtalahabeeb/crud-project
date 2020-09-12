@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Update</title>
+
 </head>
 <body>
-$END$
+<form action="{% url 'crud_project:edit' user.id %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="firstname" placeholder="Firstname/username" value={{user.firstname}}><br>
+    <input type="text" name="lastname" placeholder="lastname" value={{user.lastname}}><br>
+    <input type="password" name="password" placeholder="password" value={{user.password}}><br>
+    <input type="email" name="email" placeholder="Email" value={{user.email}}><br>
+    <input type="submit" name="submit" value="update">
+
+
+</form>
+
 </body>
 </html>

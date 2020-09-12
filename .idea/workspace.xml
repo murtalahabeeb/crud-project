@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40b0132d-fe7e-42e7-b16c-58207f61424f" name="Default Changelist" comment="" />
+    <list default="true" id="40b0132d-fe7e-42e7-b16c-58207f61424f" name="Default Changelist" comment="designed login page with bootstrap">
+      <change afterPath="$PROJECT_DIR$/crud_project/static/temp/lib/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_project/static/temp/lib/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_project/static/temp/lib/jq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_project/static/temp/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud_project/template/temp/img3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_project/template/temp/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/crud_project/template/temp/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_project/template/temp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crud_project/template/temp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_project/template/temp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/crud_project/template/temp/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_project/template/temp/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/crud_project/template/temp/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_project/template/temp/viewusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/crud_project/template/temp/viewusers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_project/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crud_project/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,11 +24,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\mosh\Desktop\crud\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1hKmrxvX5pbEZAi1IUZdHyzC2d8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,6 +50,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mosh\Desktop\crud\crud_project\static\temp" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -37,5 +68,19 @@
       <updated>1599768360610</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="designed login page with bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="designed login page with bootstrap" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1599954343761">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599954343761" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1599954092668">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1599954092668" />
   </component>
 </project>
